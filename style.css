@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+      body {
+          margin: 0;
+          padding: 0;
+      }
+  
+      .container {
+          text-align: center;
+          width: 90%;
+          background-image: url('calcuimg.jpg');
+          background-repeat: no-repeat;
+          background-size: 150vh 100vh;
+          height: 90vh;
+          margin: auto;
+      }
+  
+      .container h1 {
+          font-family: system-ui;
+          padding-top: 3rem;
+      }
+      .container span{
+          color:darkred;
+      }
+  
+      .container .calculator {
+          background-color: white;
+          height: 24rem;
+          width: 22rem;
+          border-radius: 1rem;
+          margin-left: 33%;
+          border: 2px solid rgb(238, 7, 7);
+      }
+  
+      #monitor {
+          height: 3rem;
+          margin-top: 2rem;
+          width: 20rem;
+          background-color: #e1e6ea;
+          font-size: 2rem;
+          text-align: center;
+      }
+  
+      .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          background-color: rgb(255, 255, 127);
+          padding: 0.8rem;
+          margin: 1rem;
+      }
+  
+      .btn {
+          padding: 0 1.4rem;
+          margin: 0.2rem;
+          font-size: 1.5rem;
+          height: 2.5rem;
+          width: 4rem;
+          cursor: pointer;
+      }
+  
+      #equal {
+          width: 9rem;
+          background-color: #4de2d6;
+          color: white;
+          margin-top: 0.6rem;
+          border-radius: 0.8rem;
+      }
+  
+      .btn:hover {
+          background-color: rgb(141, 55, 55);
+          color: white;
+      }
+  
+      .footer {
+          margin-top: 5rem;
+          font-family: sans-serif;
+      }
+  
+      @media (max-width:390px) {
+          .container .calculator {
+              height: 27rem;
+              width: 20rem;
+          }
+  
+          #monitor {
+              width: 17rem;
+          }
+      }
+  
+      @media (max-width:650px) {
+          .container .calculator {
+              margin-left: 20%;
+          }
+      }
+  
+      @media (max-width:500px) {
+          .container .calculator {
+              margin-left: 0;
+          }
+      }
+  
+      @media (min-width:1450px) {
+          .container {
+              display: none;
+          }
+      
